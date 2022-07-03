@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- *  * main - Entry point
- *   *
- *    * Return: Always 0 (Success)
- *     */
+ * main - entry point
+ *
+ * Return: 0 (Success)
+ */
 int main(void)
 {
 int num1, num2, num3;
