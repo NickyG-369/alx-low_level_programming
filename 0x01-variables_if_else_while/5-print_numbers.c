@@ -2,17 +2,17 @@
 /**
  * main - entry point
  *
- * Return: 0 (success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int n;
+	int num;
 
-	for (n = 0; n < 10; n++)
-	{
-	print("%d\n", n);
-	}
+	for (num = 0; num < 10; num++)
+	printf("%d", num);
 
+	printf("\n");
 
 	return (0);
-}	
+
+}
