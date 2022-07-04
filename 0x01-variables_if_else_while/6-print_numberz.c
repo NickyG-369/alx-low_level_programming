@@ -2,15 +2,17 @@
 /**
  * main - entry point
  *
- * Return: 0 (success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-int i;
-for (i = 48; i <= 57; i++)
-{
-putchar(i);
-}
-putchar('\n');
-return (0);
+	int num;
+
+	for (num = 0; num < 10; num++)
+		putchar((num % 10) + '0');
+
+	putchar('\n');
+
+	return (0);
+
 }
