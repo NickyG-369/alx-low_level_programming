@@ -1,13 +1,11 @@
-
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- *  * main -> This program will assign a random number to the variable and  print the last digit
- *   *
- *    * Return: Always 0 (Success)
- *     */
+ * main - entry point
+ *
+ * Return: 0 (success)
+ */
 int main(void)
 {
 	int n;
@@ -27,4 +25,5 @@ else
 	printf("Last digit of %i is %i and is less than 6 and not 0\n", n, n % 10);
 }
 return (0);
+
 }
