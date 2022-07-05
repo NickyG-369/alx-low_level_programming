@@ -27,3 +27,6 @@ This is a alx-low_level_programming project with a sub-directory 0x00-hello_worl
 100-print_comb3.c
 101-print_comb4.c
 102-print_comb5.c
+
+
+1-alphabet.c
