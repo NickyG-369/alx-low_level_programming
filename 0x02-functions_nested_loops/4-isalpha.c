@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  *_isalpha - checks for alphabetical letters
- @c: a charter to be checked on
- *Return: return 0 and 1 depending on condition
+ *@c: a charter to be checked on
+ *Return:  if character is letter , lowercase or uppercase, 0 otherwise
  */
 int _isalpha(int c)
 {
