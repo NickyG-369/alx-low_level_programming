@@ -4,9 +4,9 @@
  @c: a charter to be checked on
  *Return: return 0 and 1 depending on condition
  */
-int _alpha(int c)
+int _isalpha(int c)
 {
-	 return ((c >= 'a' &&  <= 'z') || (c >= 'A' && c <= 'Z'))
+	 if ((c >= 'a' &&  <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	else
 		return (0);
