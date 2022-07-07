@@ -1,6 +1,7 @@
 #include "main.h"
 /*
  * jack_bauer -> prints 24hours
+ * Return: 0 (success)
  */
 void jack_bauer(void)
 {
