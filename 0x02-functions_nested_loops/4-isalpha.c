@@ -6,5 +6,10 @@
  */
 int _alpha(int c)
 {
-	return ((c >= 'a' &&  <= 'z') || (c >= 'A' && c <= 'Z'));
+	if ((c >= 'a' &&  <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
+
+
 }
