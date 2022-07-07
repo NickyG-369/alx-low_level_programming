@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- *
+ *main - entry point
+ *@c: returns 0 and 1 depending on condition
+ *Return: 0 and 1 depending
  */
 int print_sign(int n)
 {
