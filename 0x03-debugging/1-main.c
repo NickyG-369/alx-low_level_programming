@@ -1,13 +1,18 @@
 #include <stdio.h>
+
 /**
- * main - causes an infinte loop
+ * main - cause an infinte loop
+ *
  * Return: 0
+ *
  */
 
 int main(void)
 {
 	int i;
+
 	printf("Infinite loop incoming :(\n");
+	
 	i = 0;
 
 	/**
@@ -17,8 +22,8 @@ int main(void)
 	 * }
 	 */
 
-printf("Infinite loop avoided! \\o/\");
+	printf("Infinite loop avoided! \\o/\");
 
-return(0);
+	return (0);
 
 }
