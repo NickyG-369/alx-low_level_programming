@@ -1,9 +1,12 @@
 #include "main.h"
-/*
- * jack_bauer -> prints 24hours
- * @n: argument
- * Return: 0 (success)
+
+/**
+ * jack_bauer - prints time
+ *
+ * Description: prints a list of time
+ * Return: Always 0.
  */
+
 void jack_bauer(void)
 {
 	int i, j;
@@ -12,30 +15,13 @@ void jack_bauer(void)
 	{
 		for (j = 0; j < 60; j++)
 		{
-			if (i < 10)
-			{
-				_putchar('0');
-				_putchar(i + '0');
-			}
-			else if (i >= 10)
-			{
-				_putchar((i / 10) + '0');
-				_putchar((i % 10) + '0');
-			}
-			if (j < 10)
-			{
-				_putchar(':');
-				_putchar('0');
-				_putchar(j + '0');
-
-			}
-			else if (j > 10)
-			{
-				_putchar(':');
-				_putchar((j / 10) + '0');
-				_putchar((j % 10) + '0');
-			}
+			_putchar(i / 10 + 48);
+			_putchar(i % 10 + 48);
+			_putchar(':');
+			_putchar(j / 10 + 48);
+			_putchar(j % 10 + 48);
+			_putchar('\n');
 		}
 	}
-	_putchar('\n');
 }
+
