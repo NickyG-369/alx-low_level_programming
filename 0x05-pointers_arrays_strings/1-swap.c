@@ -9,11 +9,15 @@
 * Description: This function takes a pointer to an int as parameter
 *  and updates the value it points to to 98.
 */
-
-void swapint(int *a, int *b)
+void swap_int(int *a, int *b)
 {
-int temp = *a;
+    int a;
+    int b;
 
-*a = *b;
-*b = temp;
+    a = 98;
+    b = 42;
+    printf("a=%d, b=%d\n", a, b);
+    swap_int(&a, &b);
+    printf("a=%d, b=%d\n", a, b);
+    return (0);
 }
