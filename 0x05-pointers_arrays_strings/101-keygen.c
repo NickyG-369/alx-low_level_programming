@@ -1,51 +1,42 @@
-
-
-#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 /**
- * print_number - Print an integer using only _putchar
- * @n: integer to print
+ * main - random password generator for 101-crackme
+ *
+ * Return: always 0
  */
-
-void print_number(int n)
+int main(void)
 {
-	int power;
-	int neg;
-	int hold;
+	int i, j, k, s;
+	char c[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char p[58];
 
-	neg = 0;
-	power = 1;
-	hold = n;
-	if (n < 0)
+	srand(time(NULL));
+	while (s != 2772)
 	{
-		_putchar('-');
-		neg = 1;
-	}
-
-	while (hold > 9 || hold < -9)
-	{
-		power *= 10;
-		hold /= 10;
-	}
-
-	while (power > 0)
-	{
-		if (power > 9)
+		i = k = s = 0;
+		while ((2772 - 122) > s)
 		{
-			if (!neg)
-				_putchar((n / power % 10) + '0');
-			else
-				_putchar((n / power % 10) * -1 + '0');
-
-			power /= 10;
+			j = rand() % 62;
+			p[i] = c[j];
+			s += c[j];
+			i++;
 		}
-		if (power == 1)
+		while (c[k])
 		{
-			if (neg)
-				_putchar((n % 10) * -1 + '0');
-			else
-				_putchar(n % 10 + '0');
-			power = 0;
+			if (c[k] == (2772 - s))
+			{
+				p[i] = c[k];
+				s += c[k];
+				i++;
+				break;
+			}
+			k++;
 		}
 	}
+	p[i] = '\0';
+	printf("%s", p);
+	return (0);
 }
