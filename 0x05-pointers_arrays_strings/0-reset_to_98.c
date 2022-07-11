@@ -3,6 +3,7 @@
 * reset_to_pointer -> a function to update the reference of a pointer
 * @n: pointer to n to be updated
 * Description: update the reference of a pointer
+* Return: void
 */
 void reset_to_98(int *n)
 {
