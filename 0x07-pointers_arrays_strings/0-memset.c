@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * _memset - function fills the first memory with a constant value
  * @s: buffer to be filled and returned
