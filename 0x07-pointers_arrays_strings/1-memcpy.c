@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 #include "main.h"
 /**
 * _memcpy - copies memory area
@@ -19,4 +17,4 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
->>>>>>> 4e95cbf9b8916d4556931d4970d0857286bac1af
+
