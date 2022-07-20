@@ -3,14 +3,14 @@
  * _puts_recursion -> this is function to print string recursivly
  * @s: string parameter
  */
-void _puts_recursion(char *s)
-{
-	if (*s == '\0')
+void _puts_recursion(char *s){
+	if (*s)
 	{
-		putchar('\n');
-		return;
+		_putchar(*s);
+	 _puts_recursion(s + 1);
+
 	}
-	_putchar(*s);
-	s++;
-	_puts_recursion(s);
+	else		
+	_putchar('\n');
 }
+
